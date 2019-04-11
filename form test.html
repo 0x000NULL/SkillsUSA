@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css" media="all"/>
+	  <link href="css/flexslider.css" rel="stylesheet" type="text/css"  media="all" />
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"></script>
+</head>
+<body>
+	<!-- Preloader -->
+	  <div class="loader">
+		 <!-- Preloader inner -->
+		 <div class="loader-inner">
+			<svg width="120" height="220" viewbox="0 0 100 100" class="loading-spinner" version="1.1" xmlns="http://www.w3.org/2000/svg">
+			   <circle class="spinner" cx="50" cy="50" r="21" fill="#111" stroke-width="2"/>
+			</svg>
+		 </div>
+		 <!-- End preloader inner -->
+	  </div>
+	  <!-- End preloader-->
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+	<script>
+		/*Scroll to top when arrow up clicked BEGIN*/
+$(window).scroll(function() {
+	var height = $(window).scrollTop();
+	if (height > 100) {
+		$('#back2Top').fadeIn();
+	} else {
+		$('#back2Top').fadeOut();
+	}
+});
+$(document).ready(function() {
+	$("#back2Top").click(function(event) {
+		event.preventDefault();
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+		return false;
+	});
+
+});
+ /*Scroll to top when arrow up clicked END*/
+	</script>
+	<!-- RSVP FORM -->
+	<button data-toggle="collapse" data-target="#rsvp">RSVP</button>
+	<div id="rsvp" class="collapse">
+
+		<form>
+			<p>Name</p>
+			<input type="text" name="name">
+			<p>Guests</p>
+			<input type="number" name="guests" min="0" max="4">
+			<p>Email</p>
+			<input type="email" name="email">
+
+		</form>
+
+	</div>
+	<!-- GALLERY-->
+	<section>
+  <div class="container gal-container">
+	<div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+	  <div class="box">
+		<a href="#" data-toggle="modal" data-target="#2">
+		  <img src="/images/gallery1.jpg">
+		</a>
+		<div class="modal fade" id="2" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+			  <div class="modal-body">
+				<img src="/images/gallery1.jpg">
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+	  <div class="box">
+		<a href="#" data-toggle="modal" data-target="#2">
+		  <img src="/images/gallery2.jpg">
+		</a>
+		<div class="modal fade" id="2" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+			  <div class="modal-body">
+				<img src="/images/gallery2.jpg">
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+	  <div class="box">
+		<a href="#" data-toggle="modal" data-target="#3">
+		  <img src="/images/gallery3.jpg">
+		</a>
+		<div class="modal fade" id="3" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+			  <div class="modal-body">
+				<img src="/images/gallery3.jpg">
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	  <br />
+	  <br />
+	<div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+	  <div class="box">
+		<a href="#" data-toggle="modal" data-target="#4">
+		  <img src="/images/gallery4.jpg">
+		</a>
+		<div class="modal fade" id="4" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+			  <div class="modal-body">
+				<img src="/images/gallery4.jpg">
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+	  <div class="box">
+		<a href="#" data-toggle="modal" data-target="#5">
+		  <img src="/images/image1.jpg">
+		</a>
+		<div class="modal fade" id="5" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+			  <div class="modal-body">
+				<img src="/images/image1.jpg">
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	  <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+	  <div class="box">
+		<a href="#" data-toggle="modal" data-target="#2">
+		  <img src="/images/image2.jpg">
+		</a>
+		<div class="modal fade" id="2" tabindex="-1" role="dialog">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+			  <div class="modal-body">
+				<img src="/images/image2.jpg">
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	
+	</div>
+  </div>
+</section>
+
+	<!--Javascript--> 
+	  <script src="js/jquery-3.4.0.min.js"></script>
+	  <script src="js/jquery.flexslider-min.js"></script>
+	  <script src="js/smooth-scroll.js" ></script>
+	  <script src="js/jquery.magnific-popup.min.js" ></script>
+	  <script src="js/audio.min.js" ></script>
+	  <script src="js/twitterFetcher_min.js" ></script>
+	  <script src="js/jquery.countdown.min.js" ></script>
+	  <script src="js/placeholders.min.js"></script>
+	  <script src="js/script.js"></script>
+	  <script src="js/bootstrap-4.3.1.js"</script>
+</body>
+</html>
